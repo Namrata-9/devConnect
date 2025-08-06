@@ -14,7 +14,7 @@ function AllProjects() {
 
   const fetchProjects = async () => {
     try {
-      const res = await axios.get("http://localhost:7878/api/projects");
+      const res = await axios.get("https://devconnect-7ee7.onrender.com/api/projects");
       if (Array.isArray(res.data)) {
         setProjects(res.data);
       } else {
